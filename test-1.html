@@ -1,0 +1,61 @@
+<!--https://www.teaching-materials.org/javascript/exercises/functions-->
+
+
+<script>
+//The Fortune Teller
+    function tellFortune(numChild, partnerName, geoLoc, jobTitle){
+        let future = 'You will be a ' + jobTitle + ' in ' + geoLoc +', and married to ' + partnerName + ' with ' + numChild + ' kids.';
+        console.log(future);
+    }
+    tellFortune(2, 'Cindy', 'Ecuador', 'Magician');
+    tellFortune(4, 'Princess Peach', 'Las Vegas', 'Headhunter');
+    tellFortune(3, 'Madonna', 'South Africa', 'Plumber');
+
+//The Puppy Age Calculator
+    function calculateDogAge(puppyAge){
+        let dogYears = 7*puppyAge;
+        console.log('Your doggie dog dog is ' + dogYears + ' years old in dog years.')
+    }
+    calculateDogAge(5);
+    calculateDogAge(7);
+    calculateDogAge(9);
+    
+//The Lifetime Supply Calculator
+    maxAge=100;
+    function calculateSupply(age, amountPerDay){
+        let consumption = (maxAge-age)*amountPerDay*365
+        console.log('You will need '+ consumption + ' hazelnuts to last you until the ripe age of' );
+    }
+    calculateSupply(20, 1);
+    calculateSupply(39, 2);
+
+//The Geometrizer
+    function calcCircumference(radius){
+        let circumference = 2*Math.PI*radius;
+        console.log('The circumference is ' + circumference + '.')
+    }
+    calcCircumference(5);
+
+    function calcArea(radius){
+        let area = Math.PI * radius*radius;
+        console.log('The area is ' + area + '.')
+    }
+    calcArea(6);
+   
+//The Temperature Converter
+    function celsiusToFahrenheit(celTemp){
+        let fahrTemp = celTemp * 9/5 + 32;
+        console.log(celTemp + '°C is ' + fahrTemp + '°F.')
+    }
+    celsiusToFahrenheit(20);
+    celsiusToFahrenheit(30);
+
+    function fahrenheitToCelsius(fahrTemp1){
+        let celTemp1 = (fahrTemp1 - 32) * 5/9;
+        console.log(fahrTemp1 + 'ºF is ' + celTemp1 + 'ºC.' ) 
+    }
+    fahrenheitToCelsius(100);
+    fahrenheitToCelsius(120);
+
+</script>
+

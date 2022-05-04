@@ -1,0 +1,75 @@
+<!--https://www.teaching-materials.org/javascript/exercises/strings-->
+
+<script>
+//DrEvil
+    function DrEvil(amount){
+        if (amount == 1000000) {
+            return amount + 'dollars (pinky)';
+    } else {
+        return amount +' dollars';
+    }
+    };
+    console.log(DrEvil(10));
+    console.log(DrEvil(1000000));
+
+//MixUp
+//Slice the first 2 positions:
+//let result = text.slice(0, 2);
+//From position 2 to the end:
+//let result = text.slice(2);
+
+    function mixUp(a,b){
+        return b.slice(0,2)+a.slice(2) +" "+a.slice(0,2) + b.slice(2);
+    };
+    console.log(mixUp('this','word'));
+
+    function mixUp2(a,b,c,d){
+        return b.slice(0,1) + a.slice(1) +" "+ c.slice(0,1) + b.slice(1) +" "+ d.slice(0,1) + c.slice(1)+" " + a.slice(0,1) + d.slice(1);
+    };
+    console.log(mixUp2('all','words','are','scrambled'))
+
+   //FixStart
+   
+    function fixStart(word){
+        let firstChar = word.charAt(0);
+        return firstChar + word.slice(1).replace(new RegExp(firstChar, 'g'), '*');
+    };
+    console.log(fixStart('bambus'))
+
+    //Verbing
+
+    function verbing(anotherWord){
+        if (anotherWord.length>= 3){
+            if (anotherWord.slice(-3) == 'ing'){
+            return anotherWord +'ly';
+        }
+            else {
+                return anotherWord + 'ing';
+            }}
+            else {
+                return anotherWord 
+            }
+            }
+    console.log(verbing('interesting'));
+    console.log(verbing('fantastic'));
+    console.log(verbing('one'));
+    console.log(verbing('on'));
+    
+    //Not Bad
+
+    function notBad(sentence){
+        let notIndex = sentence.indexOf('not');
+        let badIndex = sentence.indexOf('bad');
+        if
+    }
+
+
+
+
+
+
+
+
+
+
+</script>

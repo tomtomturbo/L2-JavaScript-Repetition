@@ -1,0 +1,52 @@
+<!--https://www.teaching-materials.org/javascript/exercises/variables -->
+
+
+<p>Javascript Repetition</p>
+<script>
+//The Fortune Teller
+    let numKidz = 2;
+    let partner = 'Venus Williams';
+    let geoLocation = 'Hawaii';
+    let jobTitle = 'web developer';
+
+    let future = 'You will be a ' + jobTitle + ' in ' + geoLocation + ', and married to ' + partner + ' with ' + numKidz + ' kids.';
+    console.log(future);
+
+
+//The Age Calculator
+    let birthYear = 1982;
+    let futureYear = 2050;
+    let currentAge = futureYear - birthYear
+
+    console.log('I will be either ' + currentAge + ' or ' + (currentAge + 1) + ', depending on what month it is in ' + futureYear + '.');
+
+
+//The Lifetime Supply Calculator
+    let currAge = 39;
+    let maxAge = 100;
+    let dailyCashewAmount = 5;
+
+    console.log('You will need ' + (maxAge - currAge) * 365 * dailyCashewAmount + ' Cashew Nuts to last you until the ripe old age of ' + maxAge + ".")
+
+
+//The Geometrizer
+    let radius = 3;
+    let circumference = 2 * Math.PI * radius;
+
+    console.log('The circumference is ' + circumference + '.');
+
+    let area = Math.PI * (radius * radius);
+
+    console.log('The area is ' + area + '.');
+
+
+//The Temperature Converter
+let tempC = 25;
+let tempF = (tempC * 9/5) + 32;
+console.log(tempC + '°C is ' + tempF + '°F.');
+let tempF2 = 100;
+let tempC2 = (tempF2 - 32) * 5/9;
+console.log()
+
+
+</script>

@@ -1,0 +1,43 @@
+<!--https://www.teaching-materials.org/javascript/exercises/calculator-->
+
+<script>
+//Calculator
+    function squareNumber(num){
+        let result = num*num;
+        console.log('The result of squaring the number ' + num +' is ' + result +'.');
+    }
+    squareNumber(15);
+    squareNumber(25);
+
+
+    function halfNumber(num){
+        let result = num/2;
+        console.log('Half of ' + num + ' is ' + result + '.');
+    }
+    halfNumber(10);
+    halfNumber(50);
+
+    function percentOf(num,num1){
+        let percentage = num/num1;
+        console.log(num + ' is ' + percentage*100 + ' % of ' + num1);
+    }
+    percentOf(10,100);
+    percentOf(1,2);
+
+    function areaOfCircle(radius){
+        let area = Math.PI * radius*radius;
+        console.log('The area for a circle with radius ' + radius + ' is ' + area + '.');
+    }
+    areaOfCircle(5);
+    areaOfCircle(10);
+
+    function allTogether(num){
+        let half = halfNumber(num);
+        let square = squareNumber(half);
+        let area = areaOfCircle(square);
+        let result = percentOf(square, area);
+    }
+    allTogether(5);
+
+
+</script>
