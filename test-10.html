@@ -1,0 +1,76 @@
+<!--https://www.teaching-materials.org/javascript/exercises/cashregister-->
+
+<script>
+    //The Cash Register
+
+    let cartForParty = {
+        banana: "1.25",
+        handkerchief: ".99",
+        Tshirt: "25.01",
+        apple: "0.60",
+        nalgene: "10.34",
+        proteinShake: "22.36"
+    };
+
+
+    /*function cashRegister(cart){
+        let items = Object.keys(cart);
+        let sum = 0;
+    
+        for (let i = 0; i < items.length; i++){
+            let itemName = items[i];
+            let itemPrice = cart[itemName];
+            sum += Number.parseFloat(itemPrice);
+        }
+        return sum;
+    };
+    cashRegister(cartForParty);
+    
+    */
+
+    function cashRegister(cart) {
+
+        let items = Object.keys(cart); // array of items by key   
+        let prices = Object.values(cart);
+
+        var sum = 0;
+
+        for (var i = 0; i < items.length; i++) {
+
+            var itemName = items[i]; // get the name of the key for the item
+            var itemPrice = prices[i];
+
+            const initialValue = 0;
+            const sumWithInitial = prices.reduce(
+                (sum, itemPrice) => sum + itemPrice,
+                initialValue
+            );
+
+            console.log(sumWithInitial);
+
+        }
+       
+    }
+
+    
+
+    cashRegister(cartForParty);
+/*
+        ///////////////////////////////////////////
+        const array1 = [1, 2, 3, 4];
+    
+        // 0 + 1 + 2 + 3 + 4
+        const initialValue = 0;
+        const sumWithInitial = prices.reduce(
+            (0, prices.length) => previousValue + currentValue,
+                initialValue
+    );
+    
+        console.log(sumWithInitial);
+    // expected output: 10
+    
+    
+    for (i=0; i<prices[i].length; i++){
+        let result += itemPrice;*/
+
+</script>

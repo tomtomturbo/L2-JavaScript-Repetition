@@ -1,0 +1,32 @@
+<!--teaching-materials.org/javascript/exercises/arrays-->
+
+<!--Arrays-->
+
+<p>Javascript Repetition</p>
+<script>
+//your top choices:
+
+let array = ['blue','brown','orange','red','purple'];
+for (let i =0; i < array.length; i++){
+    console.log('My #' + (i+1) + ' choice is ' + array[i] +'.');
+}
+
+for (let i=0; i < array.length; i++){
+    let choiceNum = i + 1;
+    let choiceNumSuffix;
+    if (choiceNum == 1){
+        choiceNumSuffix = 'st';
+    } 
+    else if (choiceNum == 2){
+        choiceNumSuffix = 'nd';
+    }
+    else if (choiceNum == 3){
+        choiceNumSuffix = 'rd';
+    } 
+    else {
+        choiceNumSuffix = 'th';
+    }
+    console.log('My ' + choiceNum + choiceNumSuffix + ' choice is ' + array[i] +'.');
+}
+
+</script>

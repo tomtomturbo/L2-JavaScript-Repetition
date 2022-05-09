@@ -1,0 +1,32 @@
+<!--https://www.teaching-materials.org/javascript/exercises/objectarguments-->
+
+<script>
+
+//The Movie Database
+
+let myFavMovie = 
+    {
+        title:'Lord of the Rings',
+        duration:'178',
+        stars:['Elijah Wood','Viggo Mortensen', 'Sean Astin','Orlando Bloom','Ian McKellen', 'Cate Blanchett', 'Liv Tyler']
+    }
+;
+function printMovie(movie){
+    console.log(movie.title + ' lasts for ' + movie.duration +' minutes.');
+    let movieStar = 'Stars:';
+    for (let i=0; i<movie.stars.length; i++){
+        movieStar += movie.stars[i];
+        if (i != movie.stars.length -1){
+            movieStar += ', ';
+        }
+    }
+    console.log(movieStar); 
+};
+//always call the function in the end:
+printMovie(myFavMovie);
+
+
+
+
+
+</script>

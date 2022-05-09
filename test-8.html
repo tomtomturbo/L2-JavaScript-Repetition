@@ -1,0 +1,47 @@
+<!--https://www.teaching-materials.org/javascript/exercises/objects-->
+
+<script>
+
+//The Recipe Card
+
+let recipe = {
+    title: "Risotto",
+    servings: 5,
+    ingredients:['Rice', 'Onions', 'Garlic', 'Bouillon', 'Butter']
+}
+console.log(recipe.title);
+console.log('Serves: ' + recipe.servings);
+console.log('Ingredients:');
+for (let i=0; i <recipe.ingredients.length; i++){
+    console.log(recipe.ingredients[i])
+}
+
+//The Reading List
+let books = [
+{   title: 'Der Insasse', 
+    author: 'Sebastian Fitzek', 
+    alreadyRead: 0,
+},
+{   title: 'Vanitas – Schwarz wie Erde',
+    author: 'Ursula Poznanski',
+    alreadyRead: 0,
+},
+{   title: 'Die ewigen Toten',
+    author: 'Simon Beckett',
+    alreadyRead: 0,
+},
+{   title: 'Herr der Ringe',
+    author: 'J.R.R. Tolkien',
+    alreadyRead: 1,
+}
+]
+for (let i=0; i<books.length; i++){
+    let book = books[i];
+    if (!(book.alreadyRead)){
+    console.log('You still need to read ' + book.title + ' by ' + book.author);
+} else {
+    console.log('You already read ' + book.title + ' by ' + book.author);
+}}
+
+
+</script>

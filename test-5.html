@@ -1,0 +1,70 @@
+<!--https://www.teaching-materials.org/javascript/exercises/ifelse-->
+
+<!--for loops-->
+
+
+<p>Javascript Repetition</p>
+<script>
+//The even/odd reporter
+
+
+for (let i=0; i<=20; i++){
+    if (i%2===0){
+        console.log("The number " + i + " is even.");
+    } else {
+        console.log("The number " + i + " is odd.");
+}
+}
+
+//Multiplication Tables
+
+let multiplier = 9;
+for (let i=0; i<=10; i++){
+    let result = i * multiplier;
+    console.log(i +' * ' + multiplier + ' = ' + result);
+}
+
+for (let multiplier=0; multiplier<=10; multiplier++){
+    for (let i=0; i<=10; i++){
+        let result = i * multiplier;
+    console.log(i +' * ' + multiplier + ' = ' + result);
+
+    }
+}
+
+//The Grade Assigner
+
+function assignGrade(numScore){
+    if (numScore > 90)
+        return 'grade A.';
+    else if (numScore > 80)
+        return 'grade B.';
+    else if (numScore > 70)
+        return 'grade C.';
+    else if (numScore > 60)
+        return 'grade D.';
+    else 
+        return 'grade E.';
+}
+
+for (let i=70; i <= 100; i++){
+    console.log('For '+ i + ', you got a ' + assignGrade(i));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
